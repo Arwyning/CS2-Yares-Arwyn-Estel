@@ -1,8 +1,11 @@
 # CS2-Yares-Arwyn-Estel
 
-## Version 1 - Original code without input validation
-- Input: Accepts passenger's name, distance, and passengers.
-- Process: Calculates and displays fare price.
+## Version 2 - Updated code with added input validation
+Calculates fare based on distance, passengers, and a set fare rate.
+
+- Input: distance, name, and passengers.
+- Process: Calculates fare and displays it on screen.
 - Output: Fare price
-- Does not include input validation.
+- Includes data validation
+
 
