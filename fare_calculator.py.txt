@@ -1,14 +1,31 @@
 # Travel Fare Calculator
 FARE_RATE = 14
 
+
 name = input("Enter passenger name: ")
+if name == "":
+    print("Invalid input, please re-enter your name.")
+    name = input("Enter passenger name: ")
+
 distance = float(input("Enter distance (km): "))
+if distance <= 0:
+    print("Invalid distance, please enter a value greater than 0.")
+    distance = float(input("Enter distance (km): "))
+
 passengers = int(input("Enter number of passengers: "))
+if passengers % 1 != 0:
+    print("Invalid number of passengers, please enter a whole number.")
+    passengers = int(input("Enter number of passengers: "))
+
 
 total_fare = distance * FARE_RATE * passengers
 
+
+
 print("\nPassenger:", name)
 print("Total Fare: PHP", round(total_fare, 2))
+
+
 
 # Validation rules
 # 1. Passenger name -- Must not be empty
